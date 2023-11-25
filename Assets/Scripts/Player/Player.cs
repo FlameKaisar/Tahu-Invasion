@@ -4,29 +4,46 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int startHp;
-    int hp;
-    public float bulletCooldown;
-    float bulletTimer;
+    public int maxHealth;
+    public static int currentHealth;
+    public HealthBar healthBar;
+
+
+    private void Awake()
+    {
+        currentHealth = maxHealth;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        hp = startHp;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
     void Update()
     {
-        bulletTimer -= Time.deltaTime;
+
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Bullet") && bulletTimer <= 0) // jika terkena "bullet" dan bullettimernya 0 maka hp player berkurang
+        if (collision.gameObject.layer == 11)
         {
-            hp -= 1;
-            print(hp);
-            bulletTimer = bulletCooldown;
+            Damaged();
+        }
+    }
+
+    private void Damaged()
+    {
+        currentHealth -= 1;
+        healthBar.SetHealth(currentHealth);
+        print(currentHealth);
+        if (currentHealth < 0)
+        {
+            currentHealth = 0;
+            Destroy(this.gameObject);
         }
     }
 }
