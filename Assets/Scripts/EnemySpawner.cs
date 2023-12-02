@@ -37,45 +37,4 @@ public class EnemySpawner : MonoBehaviour
             timeBeforeStart -= Time.deltaTime;
         }
     }
-
-
-    /**
-    private void Start()
-    {
-        startCooldown = timeBeforeStart;
-
-    }
-
-    private void Update()
-    {
-        if (startCooldown <= 0)
-        {
-            Debug.Log("Spawn dimulai");
-            StartCoroutine(SpawnWave());
-        }
-        else
-        {
-            if (startCooldown > 0)
-            {
-                startCooldown -= Time.deltaTime;
-            }
-        }
-    }
-
-    IEnumerator SpawnWave()
-    {
-        for (int i = 0; i < count; i++)
-        {
-            SpawnEnemy(enemy);
-            yield return new WaitForSeconds(1f / rate);
-        }
-        yield break;
-    }
-
-
-    void SpawnEnemy(GameObject enemy)
-    {
-        Instantiate(enemy, spawnPoints.position, spawnPoints.rotation);
-    }
-    */
 }
