@@ -195,7 +195,7 @@ MonoBehaviour:
   BulletExplosion: 
   ParentExplosion: 1
   DeathExplosion: 
-  HP: 2
+  HP: 1
   FinalExplodeFactor: 2
   DamageFlicker: 0
   FlickerDuration: 6

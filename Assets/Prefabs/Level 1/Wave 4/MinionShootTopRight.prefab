@@ -312,7 +312,7 @@ MonoBehaviour:
   CoordsSystem: 0
   Paths:
   - ToPosition: {x: 6.28, y: 3.81}
-    speed: 10
+    speed: 5
     Curve:
       serializedVersion: 2
       m_Curve:
@@ -366,7 +366,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     initialDelay: 0
   DebugDraw: 0
-  autoDestroy: 290
+  autoDestroy: 0
   DestroyAction: 3
 --- !u!1 &2353429088644093800
 GameObject:
@@ -501,7 +501,7 @@ MonoBehaviour:
   LocalPitch: 0
   customIndicator: {fileID: 0}
   Shot: {fileID: 1000010161334016, guid: 6ceec300808987147a520c929f10a129, type: 3}
-  ShotSpeed: 30
+  ShotSpeed: 15
   LocalOffset: 0
   controller: {fileID: 0}
   OnStoppedFiring:
@@ -511,7 +511,7 @@ MonoBehaviour:
   SpriteOverride: {fileID: 0}
   ParentToEmitter: 0
   IgnoreGlobalRateScale: 0
-  ShotRate: 14
+  ShotRate: 20
   PauseRate: 100
   PauseLength: 30
   ShotOverlap: 1

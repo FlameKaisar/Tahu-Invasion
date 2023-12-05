@@ -166,7 +166,7 @@ MonoBehaviour:
   CoordsSystem: 0
   Paths:
   - ToPosition: {x: -3.29, y: -0.174}
-    speed: 7
+    speed: 10
     Curve:
       serializedVersion: 2
       m_Curve:
@@ -193,7 +193,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     initialDelay: 0
   - ToPosition: {x: -1.31, y: 6.15}
-    speed: 10
+    speed: 14
     Curve:
       serializedVersion: 2
       m_Curve:
@@ -218,9 +218,9 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    initialDelay: 120
+    initialDelay: 90
   - ToPosition: {x: -18.483, y: 21.01}
-    speed: 10
+    speed: 14
     Curve:
       serializedVersion: 2
       m_Curve:

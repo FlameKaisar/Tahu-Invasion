@@ -22,6 +22,7 @@ public class EnemySpawner : MonoBehaviour
     IEnumerator SpawnWave()
     {
         yield return new WaitForSeconds(timeBeforeStart);
+        Debug.Log("Start : " + gameObject.name);
         for (int i = 0; i < count; i++)
         {
             Instantiate(enemy, spawnPoints.position, spawnPoints.rotation);
