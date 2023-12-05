@@ -3233,7 +3233,7 @@ MonoBehaviour:
   spawnPoints: {fileID: 641405568}
   enemy: {fileID: 1774910633545979349, guid: 8e644489f0ea86a4ca03c7dde22a97c9, type: 3}
   count: 4
-  rate: 0.45
+  rate: 0.2
   timeBeforeStart: 0
 --- !u!1 &679988208
 GameObject:
@@ -7283,7 +7283,7 @@ MonoBehaviour:
   spawnPoints: {fileID: 1685088017}
   enemy: {fileID: 1774910633545979349, guid: 9f2eadc6f8b1b6c448702b2cd88692c5, type: 3}
   count: 4
-  rate: 0.45
+  rate: 0.2
   timeBeforeStart: 0
 --- !u!1 &1698398263
 GameObject:
