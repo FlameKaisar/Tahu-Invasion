@@ -366,8 +366,8 @@ MonoBehaviour:
       m_RotationOrder: 4
     initialDelay: 0
   DebugDraw: 0
-  autoDestroy: 0
-  DestroyAction: 0
+  autoDestroy: 290
+  DestroyAction: 3
 --- !u!1 &2353429088644093800
 GameObject:
   m_ObjectHideFlags: 0
