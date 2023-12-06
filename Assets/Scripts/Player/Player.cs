@@ -40,10 +40,10 @@ public class Player : MonoBehaviour
         currentHealth -= 1;
         healthBar.SetHealth(currentHealth);
         print(currentHealth);
-        if (currentHealth < 0)
+        if (currentHealth <= 0)
         {
             currentHealth = 0;
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

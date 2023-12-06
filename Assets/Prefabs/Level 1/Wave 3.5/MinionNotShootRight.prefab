@@ -217,5 +217,5 @@ MonoBehaviour:
       m_RotationOrder: 4
     initialDelay: 0
   DebugDraw: 0
-  autoDestroy: 0
-  DestroyAction: 0
+  autoDestroy: 300
+  DestroyAction: 3
