@@ -47,6 +47,7 @@ public class MenuSetting : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Level1");
+        PlayerPrefs.DeleteKey("score");
     }
 
     public void ExitGame()

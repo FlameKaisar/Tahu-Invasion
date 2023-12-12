@@ -2,14 +2,18 @@ using ND_VariaBULLET;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
-using UnityEngine.Windows;
+
 
 public class BossPattern : MonoBehaviour
 {
     public GameObject Boss;
+    public HealthBarBoss healthBarBoss;
+    public GameObject healthBoss;
+    public GameObject winScreen;
 
-    public TMP_Text healthText;
+    [SerializeField] float delayBeforeWin = 1.5f;
 
     private bool phase1 = true;
     private bool phase2 = false;
@@ -23,6 +27,16 @@ public class BossPattern : MonoBehaviour
 
     public float HpPhase1 = 25;
     public float HpPhase2 = 10;
+
+    private float currentHp;
+
+    private void Awake()
+    {
+        healthBoss.SetActive(true);
+        Convert();
+        healthBarBoss.SetMaxHealthBoss(currentHp);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,15 +48,43 @@ public class BossPattern : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Convert();
         //timer();
         HpBoss();
     }
 
-    void HpBoss()
+    private void OnDestroy()
+    {
+        Debug.Log("Hore Menang");
+        Win();
+    }
+
+    void Win()
+    {
+
+        /*
+        delayBeforeWin -= Time.deltaTime;
+        if (delayBeforeWin <= 0 )
+        {
+            Time.timeScale = 0f;
+            winScreen.SetActive(true);
+        }
+        */
+    }
+
+
+
+
+    void Convert()
     {
         ShotCollisionDamage boss = Boss.GetComponent<ShotCollisionDamage>();
-        float HPBoss = boss.HP;
-        if (HPBoss <= HpPhase1 && phase1 == true)
+        currentHp = boss.HP;
+    }
+
+    void HpBoss()
+    {
+        healthBarBoss.SetHealthBoss(currentHp);
+        if (currentHp <= HpPhase1 && phase1 == true)
         {
             Debug.Log("Phase 2");
             phase1 = false;
@@ -50,7 +92,7 @@ public class BossPattern : MonoBehaviour
             Phase2();
         }
 
-        if (HPBoss <= HpPhase2 && phase2 == true)
+        if (currentHp <= HpPhase2 && phase2 == true)
         {
             phase2 = false;
             phase3 = true;

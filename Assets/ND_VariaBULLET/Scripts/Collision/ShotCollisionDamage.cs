@@ -33,6 +33,8 @@ namespace ND_VariaBULLET
         private Color NormalColor;
         private SpriteRenderer rend;
 
+        public float scoreValue = 25;
+
         void Start()
         {
             rend = GetComponent<SpriteRenderer>();
@@ -74,6 +76,7 @@ namespace ND_VariaBULLET
                     finalExplode.transform.localScale = new Vector2(finalExplode.transform.localScale.x * FinalExplodeFactor, finalExplode.transform.localScale.y * FinalExplodeFactor);
                 }
 
+                ScoreCounter.currentScore += scoreValue;
                 Destroy(this.gameObject);
             }
         }

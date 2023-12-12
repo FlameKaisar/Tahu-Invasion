@@ -25,8 +25,16 @@ public class EnemySpawner : MonoBehaviour
         Debug.Log("Start : " + gameObject.name);
         for (int i = 0; i < count; i++)
         {
-            Instantiate(enemy, spawnPoints.position, spawnPoints.rotation);
-            yield return new WaitForSeconds(1f / rate);
+            if (!enemy.activeSelf)
+            {
+                enemy.SetActive(true);
+            }
+            if (spawnPoints)
+            {
+                Instantiate(enemy, spawnPoints.position, spawnPoints.rotation);
+                yield return new WaitForSeconds(1f / rate);
+            }
+
         }
     }
 

@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoseCondition : MonoBehaviour
+public class LoseWinScreen : MonoBehaviour
 {
     public GameObject loseScreen;
     [SerializeField] float delayTime = 1.5f;
+    public TextMeshProUGUI highScore;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,12 +29,14 @@ public class LoseCondition : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
         Time.timeScale = 0f;
         loseScreen.SetActive(true);
+        highScore.text = ScoreCounter.displayScore.ToString("00000");
         print("Skill Issue detected");
     }
 
     public void RestartLevel()
     {
         SceneManager.LoadScene("Level1");
+        PlayerPrefs.DeleteKey("score");
         Time.timeScale = 1.0f;
     }
 
@@ -40,5 +44,13 @@ public class LoseCondition : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1.0f;
+    }
+
+    public void NextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1.0f;
+        PlayerPrefs.SetFloat("score", ScoreCounter.currentScore);
+        Debug.Log(PlayerPrefs.GetFloat("score"));
     }
 }

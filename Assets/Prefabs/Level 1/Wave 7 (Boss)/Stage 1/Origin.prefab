@@ -607,7 +607,7 @@ MonoBehaviour:
   CommandKey: 32
   AutoHoldDuration: 45
   TriggerAutoFire: 1
-  TriggerDelay: 10
+  TriggerDelay: 120
   EmitterAmount: 4
   DefaultEmitter: 0
   sortLayer: 1
