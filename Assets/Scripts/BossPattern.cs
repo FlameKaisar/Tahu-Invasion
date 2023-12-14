@@ -49,29 +49,8 @@ public class BossPattern : MonoBehaviour
     void Update()
     {
         Convert();
-        //timer();
         HpBoss();
     }
-
-    private void OnDestroy()
-    {
-        Debug.Log("Hore Menang");
-        Win();
-    }
-
-    void Win()
-    {
-
-        /*
-        delayBeforeWin -= Time.deltaTime;
-        if (delayBeforeWin <= 0 )
-        {
-            Time.timeScale = 0f;
-            winScreen.SetActive(true);
-        }
-        */
-    }
-
 
 
 
@@ -99,21 +78,6 @@ public class BossPattern : MonoBehaviour
             Phase3();
         }
 
-    }
-
-    void timer()
-    {
-        if (timebeforestart >= 0)
-        {
-            timebeforestart -= Time.deltaTime;
-        }
-        else
-        {
-            CustomPath path = GetComponent<CustomPath>();
-            CustomPath1 path1 = GetComponent<CustomPath1>();
-            path.enabled = false;
-            path1.enabled = true;
-        }
     }
 
     IEnumerator bossStart()

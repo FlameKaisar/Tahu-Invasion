@@ -71,5 +71,6 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         dialogueBox.gameObject.SetActive(false);
+        WaveStart.waveStart = true;
     }
 }
