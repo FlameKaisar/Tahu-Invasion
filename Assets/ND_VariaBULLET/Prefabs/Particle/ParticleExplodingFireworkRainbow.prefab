@@ -383,7 +383,7 @@ MonoBehaviour:
   Shot: {fileID: 1757908124578156, guid: 52f555bda3d09d942b4e921ddcd6af6b, type: 3}
   ShotSpeed: 12
   LocalOffset: 0
-  controller: {fileID: 114907601492334060}
+  controller: {fileID: 0}
   OnStoppedFiring:
     m_PersistentCalls:
       m_Calls: []
@@ -842,7 +842,7 @@ MonoBehaviour:
   Shot: {fileID: 1757908124578156, guid: 52f555bda3d09d942b4e921ddcd6af6b, type: 3}
   ShotSpeed: 12
   LocalOffset: 0
-  controller: {fileID: 114907601492334060}
+  controller: {fileID: 0}
   OnStoppedFiring:
     m_PersistentCalls:
       m_Calls: []
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   Shot: {fileID: 1757908124578156, guid: 52f555bda3d09d942b4e921ddcd6af6b, type: 3}
   ShotSpeed: 12
   LocalOffset: 0
-  controller: {fileID: 114907601492334060}
+  controller: {fileID: 0}
   OnStoppedFiring:
     m_PersistentCalls:
       m_Calls: []
@@ -2137,7 +2137,7 @@ MonoBehaviour:
   Shot: {fileID: 1757908124578156, guid: 52f555bda3d09d942b4e921ddcd6af6b, type: 3}
   ShotSpeed: 12
   LocalOffset: 0
-  controller: {fileID: 114907601492334060}
+  controller: {fileID: 0}
   OnStoppedFiring:
     m_PersistentCalls:
       m_Calls: []
@@ -2256,7 +2256,7 @@ MonoBehaviour:
   Shot: {fileID: 1757908124578156, guid: 52f555bda3d09d942b4e921ddcd6af6b, type: 3}
   ShotSpeed: 12
   LocalOffset: 0
-  controller: {fileID: 114907601492334060}
+  controller: {fileID: 0}
   OnStoppedFiring:
     m_PersistentCalls:
       m_Calls: []
@@ -2407,7 +2407,7 @@ MonoBehaviour:
   Shot: {fileID: 1757908124578156, guid: 52f555bda3d09d942b4e921ddcd6af6b, type: 3}
   ShotSpeed: 12
   LocalOffset: 0
-  controller: {fileID: 114907601492334060}
+  controller: {fileID: 0}
   OnStoppedFiring:
     m_PersistentCalls:
       m_Calls: []
@@ -2526,7 +2526,7 @@ MonoBehaviour:
   Shot: {fileID: 1757908124578156, guid: 52f555bda3d09d942b4e921ddcd6af6b, type: 3}
   ShotSpeed: 12
   LocalOffset: 0
-  controller: {fileID: 114907601492334060}
+  controller: {fileID: 0}
   OnStoppedFiring:
     m_PersistentCalls:
       m_Calls: []
@@ -2796,7 +2796,7 @@ MonoBehaviour:
   Shot: {fileID: 1757908124578156, guid: 52f555bda3d09d942b4e921ddcd6af6b, type: 3}
   ShotSpeed: 12
   LocalOffset: 0
-  controller: {fileID: 114907601492334060}
+  controller: {fileID: 0}
   OnStoppedFiring:
     m_PersistentCalls:
       m_Calls: []

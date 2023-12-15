@@ -626,9 +626,9 @@ MonoBehaviour:
   LaserExplosion: 
   BulletExplosion: 
   ParentExplosion: 1
-  DeathExplosion: 
+  DeathExplosion: ExplosionEnemyShort
   HP: 1
-  FinalExplodeFactor: 2
+  FinalExplodeFactor: 0.5
   DamageFlicker: 0
   FlickerDuration: 6
   DamageColor: {r: 0, g: 0, b: 0, a: 0}

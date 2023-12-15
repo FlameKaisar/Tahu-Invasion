@@ -133,12 +133,13 @@ MonoBehaviour:
   LaserExplosion: 
   BulletExplosion: 
   ParentExplosion: 1
-  DeathExplosion: 
+  DeathExplosion: ExplosionEnemyShort
   HP: 1
-  FinalExplodeFactor: 2
+  FinalExplodeFactor: 0.5
   DamageFlicker: 0
   FlickerDuration: 6
   DamageColor: {r: 0, g: 0, b: 0, a: 0}
+  scoreValue: 25
 --- !u!58 &72083237691638554
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -54,7 +54,10 @@ MonoBehaviour:
   SpeedScale: 1
   RateScale: 1
   LockRateToSpeed: 0
-  ExplosionPrefabs: []
+  ExplosionPrefabs:
+  - {fileID: 1000013937580902, guid: 60447add513296a459f49ef8923243ed, type: 3}
+  - {fileID: 1000012501789358, guid: 3c4883cdc1b4b3041911e0e4bf3af03f, type: 3}
+  - {fileID: 1000010815794000, guid: 5948a433f578815479fa7bec6e55d8fe, type: 3}
   PoolSize: 10
   EmulateCPUThrottle: 0
   ThrottlePerBullet: 0.0008
@@ -69,7 +72,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000013067998858}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1f4b798e8b9e07418b4fe82288da917, type: 3}
   m_Name: 

@@ -71,7 +71,7 @@ public class BossPattern : MonoBehaviour
             Phase2();
         }
 
-        if (currentHp <= HpPhase2 && phase2 == true)
+        if (HpPhase2 != 0 && currentHp <= HpPhase2 && phase2 == true)
         {
             phase2 = false;
             phase3 = true;

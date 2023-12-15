@@ -29,5 +29,4 @@ namespace ND_VariaBULLET.Demo
                 transform.position = new Vector2(scroll, transform.position.y);
         }
     }
-
 }

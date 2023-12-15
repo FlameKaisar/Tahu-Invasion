@@ -76,7 +76,6 @@ namespace ND_VariaBULLET
                     finalExplode.transform.localScale = new Vector2(finalExplode.transform.localScale.x * FinalExplodeFactor, finalExplode.transform.localScale.y * FinalExplodeFactor);
                 }
 
-                ScoreCounter.currentScore += scoreValue;
                 Destroy(this.gameObject);
             }
         }
