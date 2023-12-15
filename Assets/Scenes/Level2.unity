@@ -18107,7 +18107,7 @@ MonoBehaviour:
   FreezeEdits: 0
   origin: 1
   FireCommand: 0
-  CommandKey: 32
+  CommandKey: 122
   AutoHoldDuration: 45
   TriggerAutoFire: 0
   TriggerDelay: 10
