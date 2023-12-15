@@ -612,7 +612,7 @@ MonoBehaviour:
   DefaultEmitter: 0
   sortLayer: 1
   PointScale: 0.2
-  pointDisplay: 0
+  pointDisplay: 2
   ExitPointOffset: 0
   ParentRotation: -90
   Pitch: 0

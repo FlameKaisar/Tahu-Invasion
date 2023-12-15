@@ -6020,7 +6020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &307059326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6034,7 +6034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextWave: {fileID: 368585878}
-  timeBeforeNextWave: 5
+  timeBeforeNextWave: 3
 --- !u!4 &307059327
 Transform:
   m_ObjectHideFlags: 0
@@ -6882,6 +6882,7 @@ GameObject:
   - component: {fileID: 366348277}
   - component: {fileID: 366348276}
   - component: {fileID: 366348275}
+  - component: {fileID: 366348279}
   m_Layer: 0
   m_Name: Wave 4
   m_TagString: Untagged
@@ -6924,7 +6925,7 @@ MonoBehaviour:
   enemy: {fileID: 5639923405715092692, guid: 5604cc39f04b0df46bc71896baf4199b, type: 3}
   count: 6
   rate: 0.45
-  timeBeforeStart: 25
+  timeBeforeStart: 0
 --- !u!114 &366348276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6941,7 +6942,7 @@ MonoBehaviour:
   enemy: {fileID: 1774910633545979349, guid: 8e644489f0ea86a4ca03c7dde22a97c9, type: 3}
   count: 5
   rate: 0.4
-  timeBeforeStart: 25
+  timeBeforeStart: 0
 --- !u!114 &366348277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6958,7 +6959,7 @@ MonoBehaviour:
   enemy: {fileID: 1774910633545979349, guid: 9f2eadc6f8b1b6c448702b2cd88692c5, type: 3}
   count: 5
   rate: 0.4
-  timeBeforeStart: 25
+  timeBeforeStart: 0
 --- !u!114 &366348278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6975,7 +6976,21 @@ MonoBehaviour:
   enemy: {fileID: 224778223455334683, guid: 237d663541b689b4f8837410eae4c511, type: 3}
   count: 6
   rate: 0.45
-  timeBeforeStart: 25
+  timeBeforeStart: 0
+--- !u!114 &366348279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366348273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534baae0275eeeb43abdb13f5bcd0b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextWave: {fileID: 1678695131}
+  timeBeforeNextWave: 15
 --- !u!1 &368585878
 GameObject:
   m_ObjectHideFlags: 0
@@ -7028,7 +7043,7 @@ MonoBehaviour:
   enemy: {fileID: 3935301445866304837, guid: d1fb5856ff653b0468d0c018a9cb803e, type: 3}
   count: 16
   rate: 3
-  timeBeforeStart: 1
+  timeBeforeStart: 0
 --- !u!114 &368585881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7045,7 +7060,7 @@ MonoBehaviour:
   enemy: {fileID: 2042997437595927808, guid: a9138ce923c27794880c4a9b269e57fa, type: 3}
   count: 16
   rate: 3
-  timeBeforeStart: 1
+  timeBeforeStart: 0
 --- !u!114 &368585882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7059,7 +7074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextWave: {fileID: 886073223}
-  timeBeforeNextWave: 3
+  timeBeforeNextWave: 6
 --- !u!1 &399904730
 GameObject:
   m_ObjectHideFlags: 0
@@ -22339,6 +22354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 679988210}
   - component: {fileID: 679988209}
+  - component: {fileID: 679988211}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -22378,6 +22394,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &679988211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679988208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2fe3da5df6d8bd48ba7419eb4a4deb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Goverment
+    sentences:
+    - Jadi untuk misimu hari ini adalah
+    - untuk membasmi bla bla bla
+    - yang sedang menginvasi pulau jawa
+    - diharapkan kerjasamnya
 --- !u!1 &705977419
 GameObject:
   m_ObjectHideFlags: 0
@@ -38019,7 +38054,7 @@ MonoBehaviour:
   enemy: {fileID: 3935301445866304837, guid: 1daa98049d598924a825a06f7e0192ff, type: 3}
   count: 8
   rate: 2
-  timeBeforeStart: 7
+  timeBeforeStart: 0
 --- !u!114 &886073226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38036,7 +38071,7 @@ MonoBehaviour:
   enemy: {fileID: 2042997437595927808, guid: 83f2125ddf5d7dc4eaf8c63552241a1b, type: 3}
   count: 8
   rate: 2
-  timeBeforeStart: 7
+  timeBeforeStart: 0
 --- !u!114 &886073227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38050,7 +38085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextWave: {fileID: 1303119698}
-  timeBeforeNextWave: 5
+  timeBeforeNextWave: 6
 --- !u!1 &910068486
 GameObject:
   m_ObjectHideFlags: 0
@@ -38268,6 +38303,7 @@ GameObject:
   - component: {fileID: 939923329}
   - component: {fileID: 939923331}
   - component: {fileID: 939923330}
+  - component: {fileID: 939923332}
   m_Layer: 0
   m_Name: Wave 3.5
   m_TagString: Untagged
@@ -38308,7 +38344,7 @@ MonoBehaviour:
   enemy: {fileID: 5849050760353515284, guid: 9079dd4673dd8ac4280edc0a067cb981, type: 3}
   count: 20
   rate: 2
-  timeBeforeStart: 15
+  timeBeforeStart: 0
 --- !u!114 &939923331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38325,7 +38361,21 @@ MonoBehaviour:
   enemy: {fileID: 3719067814117026168, guid: 0f0ba597d38ac004f9781076a7c29630, type: 3}
   count: 20
   rate: 2
-  timeBeforeStart: 15
+  timeBeforeStart: 0
+--- !u!114 &939923332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939923328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534baae0275eeeb43abdb13f5bcd0b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextWave: {fileID: 366348273}
+  timeBeforeNextWave: 10
 --- !u!1 &968736682
 GameObject:
   m_ObjectHideFlags: 0
@@ -39319,7 +39369,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -222.85391}
-  m_SizeDelta: {x: 1242.89, y: 288.292}
+  m_SizeDelta: {x: 1422.3, y: 295.85}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1078335978
 MonoBehaviour:
@@ -39341,7 +39391,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 1431bc86fcf31f846a45f1e1565ec899, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -40342,6 +40392,7 @@ GameObject:
   - component: {fileID: 1303119702}
   - component: {fileID: 1303119701}
   - component: {fileID: 1303119700}
+  - component: {fileID: 1303119704}
   m_Layer: 0
   m_Name: Wave 3
   m_TagString: Untagged
@@ -40384,7 +40435,7 @@ MonoBehaviour:
   enemy: {fileID: 2042997437595927808, guid: ab5cdd5965e08254d9c435309dc2da7c, type: 3}
   count: 4
   rate: 0.45
-  timeBeforeStart: 13
+  timeBeforeStart: 0
 --- !u!114 &1303119701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40401,7 +40452,7 @@ MonoBehaviour:
   enemy: {fileID: 2042997437595927808, guid: 219845c4afb4ab34cac5d4369ccc3d46, type: 3}
   count: 4
   rate: 0.45
-  timeBeforeStart: 15
+  timeBeforeStart: 0
 --- !u!114 &1303119702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40418,7 +40469,7 @@ MonoBehaviour:
   enemy: {fileID: 2042997437595927808, guid: aa51b767a0442c64da53916c63c78335, type: 3}
   count: 4
   rate: 0.45
-  timeBeforeStart: 15
+  timeBeforeStart: 0
 --- !u!114 &1303119703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40435,7 +40486,21 @@ MonoBehaviour:
   enemy: {fileID: 2042997437595927808, guid: e4233d06ad85f674293c71c202e8f965, type: 3}
   count: 4
   rate: 0.45
-  timeBeforeStart: 13
+  timeBeforeStart: 0
+--- !u!114 &1303119704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303119698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534baae0275eeeb43abdb13f5bcd0b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextWave: {fileID: 939923328}
+  timeBeforeNextWave: 2
 --- !u!1 &1310711387
 GameObject:
   m_ObjectHideFlags: 0
@@ -40678,7 +40743,7 @@ MonoBehaviour:
   enemy: {fileID: 5152551980334747697}
   count: 1
   rate: 0
-  timeBeforeStart: 58
+  timeBeforeStart: 0
 --- !u!1 &1450858489
 GameObject:
   m_ObjectHideFlags: 0
@@ -42131,6 +42196,7 @@ GameObject:
   - component: {fileID: 1641237088}
   - component: {fileID: 1641237090}
   - component: {fileID: 1641237089}
+  - component: {fileID: 1641237091}
   m_Layer: 0
   m_Name: Wave 6
   m_TagString: Untagged
@@ -42171,7 +42237,7 @@ MonoBehaviour:
   enemy: {fileID: 3935301445866304837, guid: 93f9afbed02ec1c4a8711aca207b7a0c, type: 3}
   count: 8
   rate: 1
-  timeBeforeStart: 48
+  timeBeforeStart: 0
 --- !u!114 &1641237090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42188,7 +42254,21 @@ MonoBehaviour:
   enemy: {fileID: 2042997437595927808, guid: 44bc570058d15474c9b32c65752b0f10, type: 3}
   count: 8
   rate: 1
-  timeBeforeStart: 48
+  timeBeforeStart: 0
+--- !u!114 &1641237091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641237087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534baae0275eeeb43abdb13f5bcd0b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextWave: {fileID: 1413297356}
+  timeBeforeNextWave: 10
 --- !u!1 &1646859787
 GameObject:
   m_ObjectHideFlags: 0
@@ -42480,6 +42560,7 @@ GameObject:
   - component: {fileID: 1678695135}
   - component: {fileID: 1678695134}
   - component: {fileID: 1678695133}
+  - component: {fileID: 1678695137}
   m_Layer: 0
   m_Name: Wave 5
   m_TagString: Untagged
@@ -42522,7 +42603,7 @@ MonoBehaviour:
   enemy: {fileID: 7534627295613925782, guid: 9a52c6797a143374ebdafdb924c919b2, type: 3}
   count: 4
   rate: 0.45
-  timeBeforeStart: 40
+  timeBeforeStart: 0
 --- !u!114 &1678695134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42539,7 +42620,7 @@ MonoBehaviour:
   enemy: {fileID: 3933438506197342831, guid: fe064c22dcccf8a479d7e90a1e6c14a1, type: 3}
   count: 4
   rate: 0.45
-  timeBeforeStart: 40
+  timeBeforeStart: 0
 --- !u!114 &1678695135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42556,7 +42637,7 @@ MonoBehaviour:
   enemy: {fileID: 7214324594187004916, guid: a96cd74aa44dd9b4bb0826499d1787eb, type: 3}
   count: 4
   rate: 0.45
-  timeBeforeStart: 40
+  timeBeforeStart: 0
 --- !u!114 &1678695136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42573,7 +42654,21 @@ MonoBehaviour:
   enemy: {fileID: 5132041673918550850, guid: 1c612d5cf0acb434ab806c8f261f1fb3, type: 3}
   count: 4
   rate: 0.45
-  timeBeforeStart: 40
+  timeBeforeStart: 0
+--- !u!114 &1678695137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678695131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534baae0275eeeb43abdb13f5bcd0b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextWave: {fileID: 1641237087}
+  timeBeforeNextWave: 8
 --- !u!1 &1685088016
 GameObject:
   m_ObjectHideFlags: 0
