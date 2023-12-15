@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class MenuSetting : MonoBehaviour
 {
     public TMP_Dropdown resolutionDropdown;
-    public AudioMixer audioMixer;
+    public AudioMixer audioMixer1, audioMixer2;
     Resolution[] resolutions;
 
     private void Start()
@@ -67,9 +67,14 @@ public class MenuSetting : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
-    public void SetVolume(float volume)
+    public void SetVolume1(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        audioMixer1.SetFloat("volume", volume);
+    }
+
+    public void SetVolume2(float volume)
+    {
+        audioMixer2.SetFloat("volume", volume);
     }
 
     public void Disableobject()

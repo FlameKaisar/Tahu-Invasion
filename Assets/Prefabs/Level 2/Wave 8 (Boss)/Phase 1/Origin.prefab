@@ -192,7 +192,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224021017635274217}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4238,7 +4238,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5846412504660092182}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4634,7 +4634,7 @@ MonoBehaviour:
   DefaultEmitter: 0
   sortLayer: 1
   PointScale: 0.2
-  pointDisplay: 0
+  pointDisplay: 2
   ExitPointOffset: 0
   ParentRotation: 0
   Pitch: 0
@@ -4959,7 +4959,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6925898781816065165}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -5378,7 +5378,7 @@ MonoBehaviour:
   DefaultEmitter: 0
   sortLayer: 1
   PointScale: 0.2
-  pointDisplay: 0
+  pointDisplay: 2
   ExitPointOffset: 0
   ParentRotation: 0
   Pitch: 0
@@ -5507,7 +5507,7 @@ MonoBehaviour:
   DefaultEmitter: 0
   sortLayer: 1
   PointScale: 0.2
-  pointDisplay: 0
+  pointDisplay: 2
   ExitPointOffset: 6
   ParentRotation: -90
   Pitch: 0
@@ -6114,7 +6114,7 @@ MonoBehaviour:
   DefaultEmitter: 0
   sortLayer: 1
   PointScale: 0.2
-  pointDisplay: 0
+  pointDisplay: 2
   ExitPointOffset: 0
   ParentRotation: 0
   Pitch: 0

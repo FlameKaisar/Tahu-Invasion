@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    public AudioMixer audioMixer1, audioMixer2;
     public static bool isGamePaused = false;
     public GameObject pauseMenu;
     public TMP_Dropdown resolutionDropdown;
@@ -73,9 +73,14 @@ public class PauseMenu : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
-    public void SetVolume(float volume)
+    public void SetVolume1(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        audioMixer1.SetFloat("volume", volume);
+    }
+
+    public void SetVolume2(float volume)
+    {
+        audioMixer2.SetFloat("volume", volume);
     }
 
     public void Resume()
